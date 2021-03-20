@@ -1,0 +1,54 @@
+(= a 0)
+(= a 0.1)
+(= a Xiv)
+(= a "asd")
+(= a (retOne 2))
+(= a (+ 3 5))
+(= a (- 3 5))
+(= a f)
+(= a -4)
+
+
+(int a)
+(real a)
+(rom a)
+(txt a)
+
+(read a)
+
+
+
+(write a)
+(write "ab")
+(write 4)
+
+
+(+ 3 (+ 1 (- 143 a)))
+
+(if (< a (+ 5 (- q w))) { (write "zxc") })
+
+
+(ifel (< a (+ 5 (- q w))) { (write "zxc") } { (read p) })
+
+
+(loop (< a (+ 5 (- q w))) { (write "hello") })
+
+(ownFun)
+(ownFun 3)
+(ownFun 3 a (+ 4 8) (ownFun 3))
+
+(fun ownFun nil {})
+(fun ownFun nil (int a) {})
+(fun ownFun nil (int a) (txt t) {})
+(fun ownFun nil (int a) (txt t) { (ret nil) })
+(fun ownFun int (int a) {(read a)(ret (fib 5))(write b)})
+(fun ownFun nil (int a) {(ret a)})
+
+
+(. "asd" "asd")
+(. "asd" a)
+(. "asd" (fib 5))
+
+(fun get_factorial int (int n) {(if (< n  2) {(ret 1)})(ret (get_factorial (- n 1)))})
+
+(get_factorial 5)

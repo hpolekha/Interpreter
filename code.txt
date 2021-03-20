@@ -1,0 +1,26 @@
+(fun power_of real (real base) (int exponent) {
+	(real result)
+      (= result 1)
+        (loop (!= exponent 0) {
+               (= result (* result base))
+               (= exponent (- exponent 1))
+        })
+      (ret result)
+})
+(write (power_of 3.4 5))
+
+(fun read_conc txt (txt name) {
+      (txt surname)
+      (write "Enter Anna's surname: ")
+      (read surname)
+      (txt t)
+      (= t (. (. name ' ') surname))
+      (ret t)
+})
+
+(int kount)
+(= kount I)
+(loop (<= kount IV) {
+    (write (read_conc 'Anna'))
+    (= kount (+ kount 1))
+})
